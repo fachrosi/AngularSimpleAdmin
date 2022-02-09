@@ -1,0 +1,47 @@
+.sidenav-container {
+    height: calc(100% - 64px);
+
+    mat-nav-list {
+        padding: 0px;
+    }
+
+    mat-sidenav {
+        width: 250px;
+    }
+
+    mat-list-item {
+        font-size: 100% !important;
+    }
+
+    mat-icon {
+        margin-right: 5px;
+    }
+
+    mat-expansion-panel {
+        border: none;
+        box-shadow: none !important;
+
+        mat-expansion-panel-header{
+            font-size: 100% !important;
+            padding-left: 16px;
+            padding-right: 16px;          
+        }        
+        
+        div.mat-expansion-panel-body {
+            padding: 0px !important;
+        }      
+        
+        .mat-expansion-panel-header.mat-expanded {
+            height: 48px !important;
+        }
+    }
+
+    .item-menu {
+        border-bottom: solid 1px #DDDDDD;
+    }
+
+    .item-submenu {
+        padding: 0px !important;
+    }
+    
+}
