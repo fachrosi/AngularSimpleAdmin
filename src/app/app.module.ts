@@ -13,10 +13,14 @@ import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+
 import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { LayoutComponent } from './admin/layout/layout.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,8 @@ import { LayoutComponent } from './admin/layout/layout.component';
     SigninComponent,
     SignupComponent,
     AboutComponent,
-    LayoutComponent
+    LayoutComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +43,9 @@ import { LayoutComponent } from './admin/layout/layout.component';
     MatListModule,
     MatExpansionModule,
     MatMenuModule,
-    MatCardModule
+    MatCardModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]

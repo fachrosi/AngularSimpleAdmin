@@ -1,1 +1,29 @@
-<p>signin works!</p>
+<div>
+    <div class="login-box">
+
+        <div class="img-box">
+            <img src="assets/imgs/login.png">
+        </div>
+
+        <div class="form-box">
+            <h1>Signin</h1>
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput placeholder="Username">
+                </mat-form-field>
+            </div>
+
+            <div>
+                <mat-form-field appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput placeholder="Password">
+                </mat-form-field>
+            </div>
+
+            <button mat-raised-button (click)="onSignin()">Signin</button>
+        </div>
+
+        <div class="clearer"></div>
+    </div>
+</div>
