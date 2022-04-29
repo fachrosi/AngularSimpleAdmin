@@ -19,7 +19,9 @@
 
 <mat-sidenav-container class="sidenav-container">
     <mat-sidenav #sidenav mode="side" [opened]="isOpen">
-        <mat-nav-list>
+        <app-side-menu></app-side-menu>
+
+        <!-- <mat-nav-list>
             <mat-list-item class="item-menu" [routerLink]="'dashboard'"><mat-icon>dashboard</mat-icon><span>Dashboard</span></mat-list-item>
 
             <mat-expansion-panel class="item-menu">
@@ -36,7 +38,7 @@
 
             <mat-list-item class="item-menu" [routerLink]="'about'"><mat-icon>menu_book</mat-icon><span>About</span></mat-list-item>
             
-        </mat-nav-list>
+        </mat-nav-list> -->
         
     </mat-sidenav>
     <mat-sidenav-content cdkScrollable>

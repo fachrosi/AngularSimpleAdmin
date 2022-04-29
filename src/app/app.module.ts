@@ -20,6 +20,7 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { AboutComponent } from './about/about.component';
 import { LayoutComponent } from './admin/layout/layout.component';
+import { SideMenuComponent } from './admin/side-menu/side-menu.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
@@ -29,7 +30,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     SignupComponent,
     AboutComponent,
     LayoutComponent,
-    DashboardComponent
+    SideMenuComponent,
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

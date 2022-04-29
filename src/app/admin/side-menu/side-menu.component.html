@@ -1,0 +1,15 @@
+<mat-nav-list>
+    <mat-list-item class="item-menu" [routerLink]="'dashboard'"><mat-icon>dashboard</mat-icon><span>Dashboard</span></mat-list-item>
+
+    <mat-expansion-panel class="item-menu">
+        <mat-expansion-panel-header>
+            <mat-icon>tables</mat-icon><span>Tables</span>
+          </mat-expansion-panel-header>
+          <mat-nav-list>
+            <mat-list-item class="item-submenu" [routerLink]="'tables/mat'"><mat-icon>arrow_right</mat-icon>Mat Table</mat-list-item>
+            <mat-list-item class="item-submenu" [routerLink]="'tables/custom'"><mat-icon>arrow_right</mat-icon>Custom Table</mat-list-item>
+          </mat-nav-list>
+    </mat-expansion-panel>            
+
+    <mat-list-item class="item-menu" [routerLink]="'about'"><mat-icon>menu_book</mat-icon><span>About</span></mat-list-item>    
+</mat-nav-list>

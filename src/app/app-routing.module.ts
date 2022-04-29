@@ -18,11 +18,14 @@ const routes: Routes = [
     component : LayoutComponent,
     children  : [
       {
-        path      : 'dashboard',
-        component : DashboardComponent
+        path          : 'dashboard',
+        component     : DashboardComponent
       },{
-        path      : 'about',
-        component : AboutComponent
+        path          : 'tables',
+        loadChildren  : () => import('./tables/tables.module').then(m => m.TablesModule)
+      },{
+        path          : 'about',
+        component     : AboutComponent
       }
     ]
   }
